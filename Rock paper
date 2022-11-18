@@ -1,0 +1,62 @@
+import random
+n=int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissors."))
+scisor='''
+    _____
+___;  ___)___
+        _____)
+      ________)
+    (_____)
+--.__(___)
+'''
+rock='''
+    _____
+___;  ___)
+    (______)
+    (______)
+    (_____)
+--.__(___)
+'''
+paper='''
+    _____
+___;  ___)___
+        _____)
+       ________)
+        _____)
+--._________)
+'''
+cm=random.randint(0,2)
+if n==0:
+    print(rock)
+elif n==1:
+    print(paper)
+elif n==2:
+    print(scisor)
+print('Computer Chose:')
+if cm==0:
+    print(rock)
+elif cm==1:
+    print(paper)
+elif cm==2:
+    print(scisor)
+
+if n==0:
+    if cm==0:
+        print('Draw!!')
+    elif cm==1:
+        print('You Lose!')
+    elif cm==2:
+        print('You Won!')
+elif n==1:
+    if cm==0:
+        print('You Won!')
+    elif cm==1:
+        print('Draw!!')
+    elif cm==2:
+        print('You Lose')
+elif n==2:
+    if cm==0:
+        print('You Lose!')
+    elif cm==1:
+        print('You Won!')
+    elif cm==2:
+        print('Draw!!')
